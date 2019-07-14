@@ -12,11 +12,19 @@ Ex:  hello(null) => null
 
 */
 
-function hello() {
+function hello(str) {
   // WRITE YOUR CODE UNDER THIS LINE  
+  if (str === "" || str === null)
+  	return "null";
+  return "HELLO "+str;
 
 }
+console.log(hello(""));
+console.log(hello("Jouza"));
+console.log(hello("Alex"));
+console.log(hello(null));
 
+console.log("___________________");
 
 /* Q2:
 Create a function called calculateTax
