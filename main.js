@@ -95,6 +95,7 @@ function repeatChar(str, n) {
 
 console.log(repeatChar("a",2));
 console.log(repeatChar("C",5));
+console.log("___________________");
 
 
 
@@ -112,9 +113,29 @@ Ex: stringToCapital("Are you a student in coding ACADEMY by ORANGE ?")
 => "ARE YOU A STUDENT IN CODING ACADEMY BY ORANGE ?"
 */
 
-function stringToCapital() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+var x = 1;
+
+function stringToCapital(str) {
+  // WRITE YOUR CODE UNDER THIS LINE
+  //ANOTHER SOLUTION
+  // if ( x++ === 1);
+  // else if(str.length===str.length)
+  // 	return str.toUpperCase();
+
+
+  // return stringToCapital(str);        
+
+  if ( str.length === 0)
+  	return "";
+
+  return str[0].toUpperCase() + stringToCapital(str.slice(1, str.length));
 
 }
+
+console.log(stringToCapital("My Name Is: Alex !"));
+console.log(stringToCapital("Are you a student in coding ACADEMY by ORANGE ?"));
+console.log(stringToCapital("aaaa"));
+
+
 
 // Good luck :)
