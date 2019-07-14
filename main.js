@@ -49,6 +49,7 @@ function calculateTax(sale, tax) {
 console.log(calculateTax(500,0.16));
 console.log(calculateTax(315,0.10));
 console.log(calculateTax(100,0.15));
+console.log("___________________");
 
 
 /* Q3:
@@ -65,10 +66,36 @@ Ex: repeatChar("a",2); => "a, A"
 Ex: repeatChar("C",5); => "C, c, C, c, C"
 */
 
-function repeatChar() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+function repeatChar(str, n) {
+  // WRITE YOUR CODE UNDER THIS LINE
+  var c = 1;
+  var str2 =""
+  while (c<=n)
+  {
+  		if(str>="a")
+  		{
+  		if(c%2 === 0)
+  			str2 = str2 + str.toUpperCase() +", ";
+  		else
+  			str2 = str2 + str.toLowerCase() +", ";
+  		}
+  		else
+  		{
+  			if(c%2 === 0)
+  			str2 = str2 + str.toLowerCase() +", ";
+  		else
+  			str2 = str2 + str.toUpperCase() +", ";
+  		}
+
+  		c++;
+  }
+  return str2.slice(0, -2);
 
 }
+
+console.log(repeatChar("a",2));
+console.log(repeatChar("C",5));
+
 
 
 /* Q4:
