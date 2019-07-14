@@ -16,7 +16,7 @@ function hello(str) {
   // WRITE YOUR CODE UNDER THIS LINE  
   if (str === "" || str === null)
   	return "null";
-  return "HELLO "+str;
+  return "HELLO "+str +" !";
 
 }
 console.log(hello(""));
