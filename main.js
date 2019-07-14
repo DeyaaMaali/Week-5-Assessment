@@ -40,10 +40,15 @@ Ex: calculateTax(100,0.15)
 => "You got 100 JD from sales, you should pay 15 JD for tax and you will have 85 JD as net sales."
 */
 
-function calculateTax() {
+function calculateTax(sale, tax) {
   // WRITE YOUR CODE UNDER THIS LINE 
+  return "You got " + sale + " JD from sales, you should pay " + (sale*tax) + " for tax and you will have " + ((sale - (sale*tax))) + " JD as net sales.";
 
 }
+
+console.log(calculateTax(500,0.16));
+console.log(calculateTax(315,0.10));
+console.log(calculateTax(100,0.15));
 
 
 /* Q3:
